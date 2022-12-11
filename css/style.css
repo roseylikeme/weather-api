@@ -11,10 +11,15 @@ body {
     position: fixed;
 }
 
+.container {
+    /* Center Card */
+    height: 100vh; 
+}
+
 .card {
     color: white;
     background: #000000d0;
-    max-width: 420px;
+    max-width: 500px;
     width: 100%;
 }
 
@@ -29,6 +34,7 @@ input.search-bar {
     border: none;
     /* Increase width */
     width: 100%;
+    max-width: 100%;
 }
 
 button {
@@ -42,4 +48,4 @@ button {
 
 button:hover {
     background: #7c7c7c6b;
-  }
+}
