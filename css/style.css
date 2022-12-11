@@ -51,3 +51,16 @@ button {
 button:hover {
     background: #7c7c7c6b;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 900;
+}
+
+footer a {
+    padding: 20px;
+    color: white;
+}
