@@ -37,6 +37,7 @@ function getWeather() {
                         console.log(newData)
                     });
                 })
+                //TODO: If data could not be fetched, display on screen to try a different city
         }
     }
 }
@@ -52,6 +53,7 @@ function displayWeather(data) {
         // ONLY GRAB THE FIRST PERIOD
         if (period.number == 1){
             cityTemp.innerHTML = `${period.temperature} ${period.temperatureUnit}`
+            //TODO: If there is no detailed forecast, then return shortForecast
             cityDescription.innerHTML = `Forecast: ${period.detailedForecast} <br><br>`
             cityWinds.innerHTML = `Winds: ${period.windSpeed}`
         }
