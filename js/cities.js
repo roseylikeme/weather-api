@@ -156,7 +156,7 @@ let cities = [
         "state": "Maryland"
     },
     {
-        "name": "Oklahoma name",
+        "name": "Oklahoma",
         "latitude": 35.4675602,
         "longitude": -97.5164276,
         "state": "Oklahoma"
@@ -216,7 +216,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Kansas name",
+        "name": "Kansas",
         "latitude": 39.0997265,
         "longitude": -94.5785667,
         "state": "Missouri"
@@ -438,7 +438,7 @@ let cities = [
         "state": "New York"
     },
     {
-        "name": "Jersey name",
+        "name": "Jersey",
         "latitude": 40.72815749999999,
         "longitude": -74.0776417,
         "state": "New Jersey"
@@ -582,7 +582,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Boise name",
+        "name": "Boise",
         "latitude": 43.6187102,
         "longitude": -116.2146068,
         "state": "Idaho"
@@ -738,7 +738,7 @@ let cities = [
         "state": "Michigan"
     },
     {
-        "name": "Salt Lake name",
+        "name": "Salt Lake",
         "latitude": 40.7607793,
         "longitude": -111.8910474,
         "state": "Utah"
@@ -1002,7 +1002,7 @@ let cities = [
         "state": "Texas"
     },
     {
-        "name": "Kansas name",
+        "name": "Kansas",
         "latitude": 39.114053,
         "longitude": -94.6274636,
         "state": "Kansas"
@@ -1140,7 +1140,7 @@ let cities = [
         "state": "Washington"
     },
     {
-        "name": "West Valley name",
+        "name": "West Valley",
         "latitude": 40.6916132,
         "longitude": -112.0010501,
         "state": "Utah"
@@ -1632,7 +1632,7 @@ let cities = [
         "state": "Wisconsin"
     },
     {
-        "name": "Daly name",
+        "name": "Daly",
         "latitude": 37.6879241,
         "longitude": -122.4702079,
         "state": "California"
@@ -2016,7 +2016,7 @@ let cities = [
         "state": "Florida"
     },
     {
-        "name": "League name",
+        "name": "League",
         "latitude": 29.5074538,
         "longitude": -95.0949303,
         "state": "Texas"
@@ -2352,7 +2352,7 @@ let cities = [
         "state": "Indiana"
     },
     {
-        "name": "Sioux name",
+        "name": "Sioux",
         "latitude": 42.4999942,
         "longitude": -96.40030689999999,
         "state": "Iowa"
@@ -2412,7 +2412,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Redwood name",
+        "name": "Redwood",
         "latitude": 37.48521520000001,
         "longitude": -122.2363548,
         "state": "California"
@@ -2784,7 +2784,7 @@ let cities = [
         "state": "Georgia"
     },
     {
-        "name": "Union name",
+        "name": "Union",
         "latitude": 37.5933918,
         "longitude": -122.0438298,
         "state": "California"
@@ -2802,7 +2802,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Iowa name",
+        "name": "Iowa",
         "latitude": 41.6611277,
         "longitude": -91.5301683,
         "state": "Iowa"
@@ -2868,7 +2868,7 @@ let cities = [
         "state": "New Jersey"
     },
     {
-        "name": "Rapid name",
+        "name": "Rapid",
         "latitude": 44.0805434,
         "longitude": -103.2310149,
         "state": "South Dakota"
@@ -2904,7 +2904,7 @@ let cities = [
         "state": "Texas"
     },
     {
-        "name": "Missouri name",
+        "name": "Missouri",
         "latitude": 29.6185669,
         "longitude": -95.5377215,
         "state": "Texas"
@@ -2988,7 +2988,7 @@ let cities = [
         "state": "Iowa"
     },
     {
-        "name": "Union name",
+        "name": "Union",
         "latitude": 40.6975898,
         "longitude": -74.26316349999999,
         "state": "New Jersey"
@@ -3102,7 +3102,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Bossier name",
+        "name": "Bossier",
         "latitude": 32.5159852,
         "longitude": -93.7321228,
         "state": "Louisiana"
@@ -3174,7 +3174,7 @@ let cities = [
         "state": "Minnesota"
     },
     {
-        "name": "Yuba name",
+        "name": "Yuba",
         "latitude": 39.1404477,
         "longitude": -121.6169108,
         "state": "California"
@@ -3204,7 +3204,7 @@ let cities = [
         "state": "Florida"
     },
     {
-        "name": "Johnson name",
+        "name": "Johnson",
         "latitude": 36.3134397,
         "longitude": -82.3534727,
         "state": "Tennessee"
@@ -3564,7 +3564,7 @@ let cities = [
         "state": "Michigan"
     },
     {
-        "name": "National name",
+        "name": "National",
         "latitude": 32.6781085,
         "longitude": -117.0991967,
         "state": "California"
@@ -3828,7 +3828,7 @@ let cities = [
         "state": "Illinois"
     },
     {
-        "name": "Midwest name",
+        "name": "Midwest",
         "latitude": 35.4495065,
         "longitude": -97.3967019,
         "state": "Oklahoma"
@@ -4062,7 +4062,7 @@ let cities = [
         "state": "Texas"
     },
     {
-        "name": "Carson name",
+        "name": "Carson",
         "latitude": 39.1637984,
         "longitude": -119.7674034,
         "state": "Nevada"
@@ -4152,7 +4152,7 @@ let cities = [
         "state": "Colorado"
     },
     {
-        "name": "Cathedral name",
+        "name": "Cathedral",
         "latitude": 33.7805388,
         "longitude": -116.4668036,
         "state": "California"
@@ -4164,7 +4164,7 @@ let cities = [
         "state": "Tennessee"
     },
     {
-        "name": "Lake Havasu name",
+        "name": "Lake Havasu",
         "latitude": 34.483901,
         "longitude": -114.3224548,
         "state": "Arizona"
@@ -4482,7 +4482,7 @@ let cities = [
         "state": "Washington"
     },
     {
-        "name": "Commerce name",
+        "name": "Commerce",
         "latitude": 39.8083196,
         "longitude": -104.9338675,
         "state": "Colorado"
@@ -4830,7 +4830,7 @@ let cities = [
         "state": "Arkansas"
     },
     {
-        "name": "Texas name",
+        "name": "Texas",
         "latitude": 29.383845,
         "longitude": -94.9027002,
         "state": "Texas"
@@ -5052,7 +5052,7 @@ let cities = [
         "state": "Ohio"
     },
     {
-        "name": "Haltom name",
+        "name": "Haltom",
         "latitude": 32.7995738,
         "longitude": -97.26918169999999,
         "state": "Texas"
@@ -5076,7 +5076,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Jefferson name",
+        "name": "Jefferson",
         "latitude": 38.57670170000001,
         "longitude": -92.1735164,
         "state": "Missouri"
@@ -5592,7 +5592,7 @@ let cities = [
         "state": "Texas"
     },
     {
-        "name": "Atlantic name",
+        "name": "Atlantic",
         "latitude": 39.3642834,
         "longitude": -74.4229266,
         "state": "New Jersey"
@@ -5610,7 +5610,7 @@ let cities = [
         "state": "Texas"
     },
     {
-        "name": "Culver name",
+        "name": "Culver",
         "latitude": 34.0211224,
         "longitude": -118.3964665,
         "state": "California"
@@ -5640,7 +5640,7 @@ let cities = [
         "state": "California"
     },
     {
-        "name": "Bullhead name",
+        "name": "Bullhead",
         "latitude": 35.1359386,
         "longitude": -114.5285981,
         "state": "Arizona"
@@ -5892,13 +5892,13 @@ let cities = [
         "state": "Colorado"
     },
     {
-        "name": "Phenix name",
+        "name": "Phenix",
         "latitude": 32.4709761,
         "longitude": -85.0007653,
         "state": "Alabama"
     },
     {
-        "name": "Grove name",
+        "name": "Grove",
         "latitude": 39.88145189999999,
         "longitude": -83.0929644,
         "state": "Ohio"
@@ -5928,7 +5928,7 @@ let cities = [
         "state": "Michigan"
     },
     {
-        "name": "Calumet name",
+        "name": "Calumet",
         "latitude": 41.6155909,
         "longitude": -87.5294871,
         "state": "Illinois"
@@ -5994,7 +5994,7 @@ let cities = [
         "state": "Wisconsin"
     },
     {
-        "name": "Panama name",
+        "name": "Panama",
         "latitude": 30.1588129,
         "longitude": -85.6602058,
         "state": "Florida"
