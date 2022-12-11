@@ -74,6 +74,12 @@
   <!-- Semantic UI Dropdown -->
   <script>
     $(".ui.dropdown").dropdown();
+
+    // Prevents Users From Dragging Image For Downloads
+    const img = document.querySelector('img')
+    img.ondragstart = () => {
+    return false;
+};
   </script>
 </body>
 
