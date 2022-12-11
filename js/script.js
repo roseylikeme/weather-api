@@ -31,32 +31,34 @@ function getWeather() {
                 .then((response) => response.json())
                 .then(data => {
                     fetch(data.properties.forecast)
-                    .then(response => response.json())
-                    .then((newData) => {
-                        displayWeather(newData);
-                        console.log(newData)
-                    });
+                        .then(response => response.json())
+                        .then((newData) => {
+                            displayWeather(newData);
+                            console.log(newData)
+                        });
                 })
-                //TODO: If data could not be fetched, display on screen to try a different city
+            //TODO: If data could not be fetched, display on screen to try a different city
         }
     }
 }
 
 function displayWeather(data) {
-    for (let city of cities){
+    // Change Background
+    for (let city of cities) {
         if (city.name == cityDropdown.value) {
             cityNamePlaceholder.innerHTML = city.name;
+            document.getElementById("imageid").src="https://source.unsplash.com/1600x900/?" + city.name + "," + city.state + "landscape" +"')";
         }
     }
 
     for (let period of data.properties.periods) {
         // ONLY GRAB THE FIRST PERIOD
-        if (period.number == 1){
-            cityTemp.innerHTML = `${period.temperature} ${period.temperatureUnit}`
+        if (period.number == 1) {
+            cityTemp.innerHTML = `${period.temperature}°${period.temperatureUnit}`
             //TODO: If there is no detailed forecast, then return shortForecast
             cityDescription.innerHTML = `Forecast: ${period.detailedForecast} <br><br>`
             cityWinds.innerHTML = `Winds: ${period.windSpeed}`
         }
     }
-    
+
 }
