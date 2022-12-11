@@ -22,8 +22,10 @@ body {
     max-width: 500px;
     width: 100%;
 }
-
-input.search-bar {
+input.search {
+    color: white;
+}
+.ui.search.selection {
     background: #7c7c7c6b;
     color: white;
     font-family: inherit;
