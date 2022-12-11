@@ -30,19 +30,17 @@
     <div class="container justify-content-center d-flex align-items-center">
       <div class="card rounded-5 p-5 m-5">
         <!-- City Search Stuff -->
-        <select class="ui search dropdown mb-4 d-flex align-items-center">
-          <option value="">Select a City</option>
+        <select id="cityDropdown" class="ui search dropdown mb-4 d-flex align-items-center">
+          
         </select>
 
         <!-- City Content -->
         <div class="weather">
-          <h2 class="city mb-3">Weather in the City</h2>
-          <div class="temp h1">51°F</div>
-          <img src="" alt="" class="icon" />
-          <div class="description">Cloudy with a chance of meatballs.</div>
-          <div class="wind">Winds: 69 mph</div>
+          <h2 id="city" class="city mb-3">Weather in the City</h2>
+          <div id="temp" class="temp h1 mb-4">°F</div>
+          <div id="description" class="description">Cloudy with a chance of meatballs.</div>
+          <div id="winds" class="wind"></div>
         </div>
-      </div>
     </div>
   </main>
 
