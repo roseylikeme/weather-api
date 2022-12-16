@@ -57,7 +57,7 @@ function displayWeather(data) {
             cityTemp.innerHTML = `${period.temperature}°${period.temperatureUnit}`
             //TODO: If there is no detailed forecast, then return shortForecast
             cityDescription.innerHTML = `Forecast: ${period.detailedForecast} <br><br>`
-            cityWinds.innerHTML = `Winds: ${period.windSpeed}`
+            cityWinds.innerHTML = `Winds: ${period.windDirection} ${period.windSpeed}` 
         }
     }
 
