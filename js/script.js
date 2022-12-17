@@ -8,9 +8,13 @@ let cityDescription = document.getElementById("description");
 let cityWinds = document.getElementById("winds");
 let cityHumidity = document.querySelector('.humidity');
 
+let currentTemp;
+let currentUnit;
+
 window.onload = function () {
     initCityDropdown(); // Load list of cities when loading is finished
     cityDropdown.onchange = getWeather; // When a City is Selected ... run get weather
+    cityTemp.onclick = convertTemp;
 };
 
 function initCityDropdown() {
@@ -54,11 +58,26 @@ function displayWeather(data) {
     for (let period of data.properties.periods) {
         // ONLY GRAB THE FIRST PERIOD
         if (period.number == 1) {
-            cityTemp.innerHTML = `${period.temperature}°${period.temperatureUnit}`
+            currentTemp = period.temperature;
+            currentUnit = period.temperatureUnit;
+            cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
             //TODO: If there is no detailed forecast, then return shortForecast
             cityDescription.innerHTML = `Forecast: ${period.detailedForecast} <br><br>`
             cityWinds.innerHTML = `Winds: ${period.windDirection} ${period.windSpeed}` 
         }
     }
 
+}
+
+// Change the Current Temperature Unit When The cityTemp field is clicked
+function convertTemp() {
+    if (currentUnit == "F"){
+        currentTemp = ((currentTemp-32) * 5/9).toFixed(0)
+        currentUnit = "C"
+        cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
+    } else {
+        currentTemp = (currentTemp * 9/5 + 32).toFixed(0)
+        currentUnit = "F"
+        cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
+    }    
 }
