@@ -2,7 +2,7 @@
 
 The Rose Project presents a Dynamic weather app using HTML, CSS, and JavaScript. 
 
-Time Spent: ~12 Hours
+Time Spent: ~14 Hours
 
 Check it out: https://roseylikeme.github.io/weather-api
 
@@ -31,3 +31,7 @@ Through building this weather application, I've learned how to utilize APIs to g
 - Access array properties & objects within objects ❗️ [oh was that a pain]
 - How to create a searchable select dropdown.
 - How to change background images with search values.
+
+## Additional Changes
+- Add wind direction.
+- Add function that converts current temperature to Celcius and back to Fahrenheit by clicking on the temperature text field.
