@@ -41,12 +41,15 @@ function getWeather() {
                             console.log(newData)
                         });
                 })
-            //TODO: If data could not be fetched, display on screen to try a different city
         }
     }
 }
 
 function displayWeather(data) {
+    // Reset values
+    cityTemp.innerHTML = ``
+    cityDescription.innerHTML = ``
+    cityWinds.innerHTML = `` 
     // Change Background
     for (let city of cities) {
         if (city.name == cityDropdown.value) {
