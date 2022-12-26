@@ -7,6 +7,7 @@ let cityTemp = document.getElementById("temp");
 let cityDescription = document.getElementById("description");
 let cityWinds = document.getElementById("winds");
 let cityHumidity = document.querySelector('.humidity');
+let msg = document.getElementById('error-msg')
 
 let currentTemp;
 let currentUnit;
@@ -35,7 +36,14 @@ function getWeather() {
                 .then((response) => response.json())
                 .then(data => {
                     fetch(data.properties.forecast)
-                        .then(response => response.json())
+                        .then((response) => {
+                            // If server is down, let users know the api is unavailable
+                            if (response.status === 503) {
+                                emptyFields();
+                                throw new Error('API is currently unavailable');
+                            }
+                            return response.json();
+                        })
                         .then((newData) => {
                             displayWeather(newData);
                             console.log(newData)
@@ -46,17 +54,7 @@ function getWeather() {
 }
 
 function displayWeather(data) {
-    // Reset values
-    cityTemp.innerHTML = ``
-    cityDescription.innerHTML = ``
-    cityWinds.innerHTML = `` 
-    // Change Background
-    for (let city of cities) {
-        if (city.name == cityDropdown.value) {
-            cityNamePlaceholder.innerHTML = city.name;
-            document.getElementById("imageid").src="https://source.unsplash.com/1600x900/?" + city.name + "," + city.state + "landscape" +"')";
-        }
-    }
+    emptyFields()
 
     for (let period of data.properties.periods) {
         // ONLY GRAB THE FIRST PERIOD
@@ -64,23 +62,43 @@ function displayWeather(data) {
             currentTemp = period.temperature;
             currentUnit = period.temperatureUnit;
             cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
-            //TODO: If there is no detailed forecast, then return shortForecast
             cityDescription.innerHTML = `Forecast: ${period.detailedForecast} <br><br>`
-            cityWinds.innerHTML = `Winds: ${period.windDirection} ${period.windSpeed}` 
+            cityWinds.innerHTML = `Winds: ${period.windDirection} ${period.windSpeed}`
         }
     }
 
 }
 
+// Clears fields if API unavailable
+function emptyFields() {
+    cityTemp.innerHTML = ``
+    cityDescription.innerHTML = 
+    `Sorry, currently can't find the details on this city. 
+    Please try again later or try another city! <br><br>
+    Enjoy this absolutely random picture from this city though!`
+    cityWinds.innerHTML = ``
+
+    changeBg();
+}
+
+function changeBg(){
+    for (let city of cities) {
+        if (city.name == cityDropdown.value) {
+            cityNamePlaceholder.innerHTML = city.name;
+            document.getElementById("imageid").src = "https://source.unsplash.com/1600x900/?" + city.name + "," + city.state + "')";
+        }
+    }
+}
+
 // Change the Current Temperature Unit When The cityTemp field is clicked
 function convertTemp() {
-    if (currentUnit == "F"){
-        currentTemp = ((currentTemp-32) * 5/9).toFixed(0)
+    if (currentUnit == "F") {
+        currentTemp = ((currentTemp - 32) * 5 / 9).toFixed(0)
         currentUnit = "C"
         cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
     } else {
-        currentTemp = (currentTemp * 9/5 + 32).toFixed(0)
+        currentTemp = (currentTemp * 9 / 5 + 32).toFixed(0)
         currentUnit = "F"
         cityTemp.innerHTML = `${currentTemp}°${currentUnit}`
-    }    
+    }
 }
